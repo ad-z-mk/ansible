@@ -1,0 +1,4 @@
+- name: copy content of index page
+  copy:
+    dest: "/home/adilet"
+    src: "/home/amukanov/ans_homework/files/info.php"

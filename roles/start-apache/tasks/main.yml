@@ -1,0 +1,10 @@
+- name: deploy nginx docker container
+  docker_container:
+    image: php:apache
+    name: nginx
+    state: started
+    auto_remove: true
+    ports:
+      - "8080:80"
+    volumes:
+      - /home/adilet/:/var/www/html

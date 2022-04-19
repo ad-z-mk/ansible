@@ -1,0 +1,11 @@
+---
+- name: deploy apache2 in docker
+  hosts: all
+  become: true
+
+
+  roles:
+    - pre-configure
+    - configure-docker
+    - copy-index-file
+    - start-apache
